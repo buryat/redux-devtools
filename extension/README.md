@@ -1,6 +1,6 @@
 # Redux DevTools Extension
 
-[![Join the chat at https://gitter.im/zalmoxisus/redux-devtools-extension](https://badges.gitter.im/zalmoxisus/redux-devtools-extension.svg)](https://gitter.im/zalmoxisus/redux-devtools-extension?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/reduxjs/redux-devtools](https://badges.gitter.im/reduxjs/redux-devtools.svg)](https://gitter.im/reduxjs/redux-devtools?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=round-square)](http://makeapullrequest.com)
 [![OpenCollective](https://opencollective.com/redux-devtools-extension/backers/badge.svg)](#backers)
 [![OpenCollective](https://opencollective.com/redux-devtools-extension/sponsors/badge.svg)](#sponsors)
@@ -12,7 +12,7 @@
 ### 1. For Chrome
 
 - from [Chrome Web Store](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd);
-- or download `extension.zip` from [last releases](https://github.com/zalmoxisus/redux-devtools-extension/releases), unzip, open `chrome://extensions` url and turn on developer mode from top left and then click; on `Load Unpacked` and select the extracted folder for use
+- or download `extension.zip` from [last releases](https://github.com/reduxjs/redux-devtools/releases), unzip, open `chrome://extensions` url and turn on developer mode from top left and then click; on `Load Unpacked` and select the extracted folder for use
 - or build it with `npm i && npm run build:extension` and [load the extension's folder](https://developer.chrome.com/extensions/getstarted#unpacked) `./build/extension`;
 - or run it in dev mode with `npm i && npm start` and [load the extension's folder](https://developer.chrome.com/extensions/getstarted#unpacked) `./dev`.
 
@@ -74,7 +74,7 @@ In case ESLint is configured to not allow using the underscore dangle, wrap it l
 + /* eslint-enable */
 ```
 
-> **Note**: Passing enhancer as last argument requires **redux@>=3.1.0**. For older versions apply it like [here](https://github.com/zalmoxisus/redux-devtools-extension/blob/v0.4.2/examples/todomvc/store/configureStore.js) or [here](https://github.com/zalmoxisus/redux-devtools-extension/blob/v0.4.2/examples/counter/store/configureStore.js#L7-L12). Don't mix the old Redux API with the new one.
+> **Note**: Passing enhancer as last argument requires **redux@>=3.1.0**. For older versions apply it like [here](https://github.com/reduxjs/redux-devtools/blob/v0.4.2/examples/todomvc/store/configureStore.js) or [here](https://github.com/reduxjs/redux-devtools/blob/v0.4.2/examples/counter/store/configureStore.js#L7-L12). Don't mix the old Redux API with the new one.
 
 > You don't need to npm install [`redux-devtools`](https://github.com/gaearon/redux-devtools) when using the extension (that's a different lib).
 
@@ -94,7 +94,7 @@ If you setup your store with [middleware and enhancers](http://redux.js.org/docs
 
 > Note that when the extension is not installed, we’re using Redux compose here.
 
-To specify [extension’s options](https://github.com/zalmoxisus/redux-devtools-extension/blob/master/docs/API/Arguments.md), use it like so:
+To specify [extension’s options](https://github.com/reduxjs/redux-devtools/blob/master/docs/API/Arguments.md), use it like so:
 
 ```js
 const composeEnhancers =
@@ -136,7 +136,7 @@ const store = createStore(
 );
 ```
 
-To specify [extension’s options](https://github.com/zalmoxisus/redux-devtools-extension/blob/master/docs/API/Arguments.md#windowdevtoolsextensionconfig):
+To specify [extension’s options](https://github.com/reduxjs/redux-devtools/blob/master/docs/API/Arguments.md#windowdevtoolsextensionconfig):
 
 ```js
 import { createStore, applyMiddleware } from 'redux';
@@ -154,7 +154,7 @@ const store = createStore(
 );
 ```
 
-> There are just a [few lines of code](https://github.com/zalmoxisus/redux-devtools-extension/blob/master/npm-package/index.js) added to your bundle.
+> There are just a [few lines of code](https://github.com/reduxjs/redux-devtools/blob/master/npm-package/index.js) added to your bundle.
 
 In case you don't include other enhancers and middlewares, just use `devToolsEnhancer`:
 
@@ -244,7 +244,7 @@ Live demos to use the extension with:
 - [React Tetris](https://chvin.github.io/react-tetris/?lan=en)
 - [Book Collection (Angular ngrx store)](https://ngrx.github.io/platform/example-app/)
 
-Also see [`./examples` folder](https://github.com/zalmoxisus/redux-devtools-extension/tree/master/examples).
+Also see [`./examples` folder](https://github.com/reduxjs/redux-devtools/tree/master/examples).
 
 ## Backers
 
